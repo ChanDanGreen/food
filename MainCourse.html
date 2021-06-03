@@ -1,23 +1,31 @@
 <html>
-<head>
-<title>Test</title>
-<script type="text/javascript">
-  var imageURLs = [
- 
-  
+  <head>
+  <style>
+  body{
+    background-color: black;
+}
+  img {
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+  </style>
+  <title>Test</title>
+  <script type="text/javascript">
+    var imageURLs = [ "https://i.imgur.com/dk5Rprp.jpg" , "https://i.imgur.com/Mmz2BoF.jpg" , "https://i.imgur.com/VOy8zJW.jpg" , "https://i.imgur.com/g9ByCoy.jpg" , "https://i.imgur.com/g42Kiz6.jpg" , "https://i.imgur.com/twa8j47.jpg"
   ];
-  function getImageTag() {
-    var img = '<img src=\"';
-    var randomIndex = Math.floor(Math.random() * imageURLs.length);
-    img += imageURLs[randomIndex];
-    img += '\" alt=\"Some alt text\"/>';
-    return img;
-  }
-</script>
-</head>
-<body>
-<script type="text/javascript">
-  document.write(getImageTag());
-</script>
-</body>
-</html>
+    function getImageTag() {
+      var img = '<img src=\"';
+      var randomIndex = Math.floor(Math.random() * imageURLs.length);
+      img += imageURLs[randomIndex];
+      img += '\" alt=\"Some alt text\"/>';
+      return img;
+    }
+  </script>
+  </head>
+  <body>
+  <script type="text/javascript">
+    document.write(getImageTag());
+  </script>
+  </body>
+  </html>
